@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Los Angeles Mountains - Explore the mountains">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <!--- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,900&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- SLICK SLIDER -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom style-->
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Los Angeles Mountains</title>
+  </head>
+  <body>
+    <!-- Landing Image -->
+    <section class="home h-screen">
+      <header class="relative z-10">
+        <div
+          class="container flex items-center px-10 py-5 md:flex-row mx-auto justify-between"
+        >
+          <a href="/" title="Logo - Los Angeles Mountains" class="cursor-pointer flex">
+            <img src="images/logo.png" alt="Los Angeles Mountains Logo" />
+          </a>
+          <nav
+            class="flex flex-wrap items-center justify-center md:ml-auto text-base"
+          >
+            <ul class="flex flex-wrap">
+              <li class="lg:mx-10 mx-5">
+                <a
+                  href="#history"
+                  class="font-bold hover:text-black italic text-white transition-colors underline"
+                  >01. &nbsp;History</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#team"
+                  class="font-bold hover:text-black italic text-white transition-colors underline"
+                  >02. &nbsp;Team</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="absolute home-bg top-0 w-full">
+        <img
+          src="images/homebg.jpg"
+          alt="Los Angeles Mountains"
+          class="h-screen w-full hidden lg:block"
+        />
+        <img
+        src="images/homebg-mob.jpg"
+        alt="Los Angeles Mountains"
+        class="h-screen w-full object-cover lg:hidden"
+      />
+      </div>
+    </section>
+
+    <!-- Landing Image -->
+
+    <!-- STICKY NAVBAR -->
+    <div class="sticky z-20 top-0 bg-white">
+      <div
+        class="container flex flex-wrap items-center justify-between lg:px-10 px-4 py-3.5 md:flex-row mx-auto"
+      >
+        <a href="/" title="Logo - Los Angeles Mountains" class="cursor-pointer flex items-center">
+          <img
+            src="images/logo.png"
+            alt="Los Angeles Mountains Logo"
+            class="border rounded-full"
+          />
+          <h3
+            class="flex flex-col font-bebas leading-none ml-2 text-2xl theme-text-gray"
+          >
+            LOSANGELES <span class="theme-text-blue font-bebas">MOUNTAINS</span>
+          </h3>
+        </a>
+        <nav
+          class="flex flex-wrap items-center justify-center md:ml-auto text-base"
+        >
+          <ul class="flex flex-wrap">
+            <li class="lg:mx-10 mx-4">
+              <a
+                href="#history"
+                class="font-bold hover:text-black italic theme-text-blue transition-colors underline"
+                >01. &nbsp;History</a
+              >
+            </li>
+            <li>
+              <a
+                href="#team"
+                class="font-bold hover:text-black italic theme-text-blue transition-colors underline"
+                >02. &nbsp;Team</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- STICKY NAVBAR -->
+
+    <!-- SECTION HISTORY -->
+    <section class="history" id="history">
+      <div class="banner-bg relative">
+        <img
+          src="images/banner-bg.jpg"
+          alt="History - Los Angeles Mountains"
+          class="h-screen lg:h-auto lg:object-none object-cover w-full"
+        />
+
+        <div
+          class="absolute banner-text left-0 lg:top-16 lg:w-2/3 mx-auto px-10 right-0 top-20 z-10"
+        >
+          <h4 class="banner-text-heading font-oswald relative theme-text-blue">
+            <span class="opacity-50 text-9xl heading-number">01.</span>
+            <span
+              class="absolute bottom-1/4 left-32 text-2xl text-4xl uppercase"
+              >History</span
+            >
+          </h4>
+          <p class="font-light font-medium lg:ml-16 lg:text-base text-xs">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
+            ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus
+            est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam.
+            Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
+            gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit
+            dignissim tortor nec congue.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-bg relative">
+        <div class="banner-slides mx-auto py-6 top-0 w-8/12">
+          <div class="carousel-images slick-slider">
+            <img
+              src="images/slides/1.png"
+              class="px-4"
+              width="220"
+              height="135"
+            />
+            <img
+              src="images/slides/2.png"
+              class="px-4"
+              width="220"
+              height="135"
+            />
+            <img
+              src="images/slides/1.png"
+              class="px-4"
+              width="220"
+              height="135"
+            />
+            <img
+              src="images/slides/2.png"
+              class="px-4"
+              width="220"
+              height="135"
+            />
+            <img
+              src="images/slides/1.png"
+              class="px-4"
+              width="220"
+              height="135"
+            />
+            <img
+              src="images/slides/2.png"
+              class="px-4"
+              width="220"
+              height="135"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION HISTORY -->
+
+    <!-- SECTION CLIMB -->
+    <section class="climb py-10 bg-white">
+      <div
+        class="banner-text flex flex-col left-0 lg:flex-row lg:items-center lg:px-0 lg:w-2/3 mx-auto px-10 right-0 top-16 w-full z-10"
+      >
+        <h4 class="banner-text-heading font-oswald relative theme-text-blue">
+          <span class="opacity-50 text-9xl heading-number">02.</span>
+          <span class="absolute bottom-1/4 left-36 text-2xl text-4xl uppercase"
+            >Climb</span
+          >
+        </h4>
+        <p class="font-light font-medium lg:ml-32">
+          Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida
+          quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim
+          tortor nec congue.
+        </p>
+      </div>
+    </section>
+    <!-- SECTION CLIMB -->
+
+    <!-- SECTION TABS -->
+    <section class="tabs-section" id="team">
+      <div class="tabs theme-bg-blue hidden lg:block">
+        <ul class="m-auto tabs-nav w-2/3">
+          <li class="px-4 py-3">
+            <a href="#tab1" class="uppercase">Mountain 1</a>
+          </li>
+          <li class="px-4 py-3">
+            <a href="#tab2" class="uppercase">Mountain 2</a>
+          </li>
+        </ul>
+        <!-- END tabs-nav -->
+        <div class="tabs-content">
+          <div id="tab1" class="relative tab-content">
+            <img
+              src="images/tab-1.jpg"
+              alt="Tab - 1 image"
+              class="w-full"
+            />
+            <div class="absolute inner-content left-0 mx-auto pt-16 right-0 top-0 w-2/3">
+              <div
+                class="bg-opacity-80 bg-white inline-block lg:ml-10 px-10 py-8 relative schedule w-2/6 z-10"
+              >
+                <h3 class="font-bebas font-bold mb-3 text-4xl theme-text-blue">
+                  Schedule
+                </h3>
+                <ul>
+                  <li class="flex justify-between mb-2 text-sm">
+                    <span>25 Nov 2016 </span><span>Vestibulum viverra</span>
+                  </li>
+                  <li class="flex justify-between mb-2 text-sm">
+                    <span>28 Nov 2018 </span><span>Vestibulum viverra</span>
+                  </li>
+                  <li class="flex justify-between mb-2 text-sm">
+                    <span>18 Dec 2016 </span><span>Vestibulum viverra</span>
+                  </li>
+                  <li class="flex justify-between text-sm">
+                    <span>7 Jan 2017 </span><span>Vestibulum viverra</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="tab2" class="relative tab-content">
+            <img
+              src="images/tab-2.jpg"
+              alt="Tab - 2 image"
+              class="w-full"
+            />
+            <div class="absolute inner-content left-0 mx-auto pt-16 right-0 top-0 w-2/3">
+              <div
+                class="bg-opacity-80 bg-white inline-block lg:ml-10 px-10 py-8 relative schedule w-2/6 z-10"
+              >
+                <h3 class="font-bebas font-bold mb-3 text-4xl theme-text-blue">
+                  Schedule
+                </h3>
+                <ul>
+                  <li class="flex justify-between mb-2 text-sm">
+                    <span>25 Nov 2016 </span><span>Vestibulum viverra</span>
+                  </li>
+                  <li class="flex justify-between mb-2 text-sm">
+                    <span>28 Nov 2018 </span><span>Vestibulum viverra</span>
+                  </li>
+                  <li class="flex justify-between mb-2 text-sm">
+                    <span>18 Dec 2016 </span><span>Vestibulum viverra</span>
+                  </li>
+                  <li class="flex justify-between text-sm">
+                    <span>7 Jan 2017 </span><span>Vestibulum viverra</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END tabs-content -->
+      </div>
+
+
+      <div class="lg:hidden mx-auto my-10 rounded theme-bg-blue w-10/12">
+        <ul class="accordion">
+          <li>
+            <span class="uppercase accord-heading accordion-active">Mountain 1</span>
+            <ul class="relative acc-content acc-active">
+              <img
+                src="images/tab-1.jpg"
+                alt="Tab - 1 image"
+                class="h-72 object-cover"
+              />
+              <div class="absolute left-0 mx-auto pt-5 right-0 top-0 w-10/12">
+                <div class="bg-opacity-80 bg-white inline-block px-4 py-2 relative schedule w-full z-10">
+                  <h3 class="font-bebas font-bold mb-3 text-4xl theme-text-blue">
+                    Schedule
+                  </h3>
+                  <ul>
+                    <li class="flex justify-between mb-2 text-sm">
+                      <span>25 Nov 2016 </span><span>Vestibulum viverra</span>
+                    </li>
+                    <li class="flex justify-between mb-2 text-sm">
+                      <span>28 Nov 2018 </span><span>Vestibulum viverra</span>
+                    </li>
+                    <li class="flex justify-between mb-2 text-sm">
+                      <span>18 Dec 2016 </span><span>Vestibulum viverra</span>
+                    </li>
+                    <li class="flex justify-between text-sm">
+                      <span>7 Jan 2017 </span><span>Vestibulum viverra</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <span class="uppercase accord-heading">Mountain 2</span>
+            <ul class="relative acc-content">
+              <img
+                src="images/tab-2.jpg"
+                alt="Tab - 2 image"
+                class="h-72 object-cover"
+              />
+              <div class="absolute left-0 mx-auto pt-5 right-0 top-0 w-10/12">
+                <div class="bg-opacity-80 bg-white inline-block px-4 py-2 relative schedule w-full z-10">
+                  <h3 class="font-bebas font-bold mb-3 text-4xl theme-text-blue">
+                    Schedule
+                  </h3>
+                  <ul>
+                    <li class="flex justify-between mb-2 text-sm">
+                      <span>25 Nov 2016 </span><span>Vestibulum viverra</span>
+                    </li>
+                    <li class="flex justify-between mb-2 text-sm">
+                      <span>28 Nov 2018 </span><span>Vestibulum viverra</span>
+                    </li>
+                    <li class="flex justify-between mb-2 text-sm">
+                      <span>18 Dec 2016 </span><span>Vestibulum viverra</span>
+                    </li>
+                    <li class="flex justify-between text-sm">
+                      <span>7 Jan 2017 </span><span>Vestibulum viverra</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </li>
+         
+        </ul>
+      </div>
+
+
+      <!-- END tabs -->
+    </section>
+    <!-- SECTION TABS -->
+
+
+
+    <!-- footer -->
+    <footer class="theme-bg-blue lg:py-0 py-4">
+      <div
+      class="container flex flex-col flex-wrap items-center lg:px-10 lg:py-3 md:flex-row mx-auto"
+    >
+    <a href="/" title="Logo - Los Angeles Mountains" class="cursor-pointer flex items-center">
+      <img
+        src="images/logo-footer.png"
+        alt="Los Angeles Mountains Logo"
+      />
+      <h3
+        class="flex flex-col font-bebas leading-none ml-2 text-2xl footer-text-logo"
+      >
+        LOSANGELES <span class="font-bebas">MOUNTAINS</span>
+      </h3>
+    </a>
+      <p
+        class="flex flex-wrap items-center justify-center md:ml-auto text-base footer-text-logo"
+      >
+      COPYRIGHT 2024. ALL RIGHTS RESERVED.
+    </p>
+    </div>
+    </footer>
+
+
+    <!-- footer -->
+    <!-- SCRIPTS -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

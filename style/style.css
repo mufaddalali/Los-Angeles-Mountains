@@ -1,0 +1,122 @@
+:root {
+    --font-bebas: 'Bebas Neue', cursive;
+    --font-lato: 'Lato', sans-serif;
+    --font-oswald: 'Oswald', sans-serif;
+    --theme-blue: #414f6b;
+    --theme-gray: #4d4d4d;
+    --theme-light-gray: #b0b4be;
+    }
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+body {
+    font-family: var(--font-lato);
+    background-color: #ffffff;
+    color: #000000;
+}
+.font-bebas{
+    font-family: var(--font-bebas);
+}
+.theme-bg-blue{
+    background-color: var(--theme-blue);
+}
+.theme-text-blue{
+    color: var(--theme-blue);
+}
+.theme-text-gray{
+    color: var(--theme-gray);
+}
+.theme-text-light-gray{
+    color: var(--theme-light-gray);
+}
+.font-oswald{
+    font-family: var(--font-oswald);
+}
+.slick-dots {
+    text-align: center;
+}
+.slick-dots li button {
+    display: block;
+    width: 6px;
+    height: 6px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background: white;
+    border-radius: 50%;
+    font-size: 0;
+    margin: 0px 3px;
+    opacity: 0.4;
+}
+.slick-dots li {
+    display: inline-block;
+}
+.slick-dots li button:hover,
+.slick-dots li.slick-active button {
+    opacity: 1;
+}
+.carousel-bg{
+    background-image: url(../images/banner-bottom-bg.jpg);
+}
+
+/* Tabs */
+.tabs-nav li {
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+}
+.tabs-nav li:hover,
+.tabs-nav li.active {
+  background-color: var(--theme-light-gray);
+  border-bottom: 1px solid var(--theme-light-gray);
+}
+.tabs-nav li:hover a{
+    color: var(--theme-text-blue); 
+}
+.tabs-nav li a {
+  text-decoration: none;
+  color: var(--theme-light-gray);
+}
+
+  .tabs-nav li.active a {
+    color: var(--theme-text-blue);
+    text-decoration: underline;
+}
+.footer-text-logo{
+    color: #63769d;
+}
+
+.accordion ul.acc-content {
+	display: none;
+}
+.accordion ul.acc-content.acc-active {
+	display: block;
+}
+.accordion li .accord-heading {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #efefef;
+    transition: ease-in-out 0.33s;
+}
+
+.accordion li .accord-heading.accordion-active {
+    background: #efefef;
+    color: #000;
+}
