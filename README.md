@@ -1,2 +1,5 @@
 # Los-Angeles-Mountains
-Los Angeles Mountains - Single Page Project
+A simple Single page project made using 
+- HTML
+- CSS
+- JavaScript
